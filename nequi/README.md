@@ -38,6 +38,7 @@ Ejecutamos la aplicación.
 # ENDPOINTS
 ## Endpoint para agregar una nueva franquicia.
 POST		http://localhost:8080/v1/franquicia/addFranquicia
+
 {
 "id": "2",
 "nombre": "Franquicia 2"
@@ -45,6 +46,7 @@ POST		http://localhost:8080/v1/franquicia/addFranquicia
 
 ## Endpoint para agregar una nueva sucursal a una franquicia.
 POST 		http://localhost:8080/v1/franquicia/addSucursal
+
 {
 "nombre": "Sucursal 33",
 "franquicia": "Franquicia 100"
@@ -52,6 +54,7 @@ POST 		http://localhost:8080/v1/franquicia/addSucursal
 
 ## Endpoint para agregar un nuevo producto a una sucursal.
 POST		http://localhost:8080/v1/sucursal/addProduct
+
 {
 "nombre": "Producto 55",
 "stock": 12,
@@ -60,6 +63,7 @@ POST		http://localhost:8080/v1/sucursal/addProduct
 
 ## Endpoint para eliminar un nuevo producto a una sucursal.
 DELETE		http://localhost:8080/v1/sucursal/deleteProduct
+
 {
 "nombreProducto": "Producto 1",
 "nombreSucursal": "Sucursal 1"
@@ -67,6 +71,7 @@ DELETE		http://localhost:8080/v1/sucursal/deleteProduct
 
 ## Endpoint para modificar el stock de un producto.
 PUT		http://localhost:8080/v1/producto/updateStock/{nombre}
+
 {
 "stock": 100
 }
@@ -77,18 +82,21 @@ GET		http://localhost:8080/v1/franquicia/getProductStock/{nombreFranquicia}
 
 ## Endpoint que permita actualizar el nombre de una franquicia.
 PUT		http://localhost:8080/v1/franquicia/updateFranquicia/{nombreFranquicia}
+
 {
 "nombre": "Franquicia 100"
 }
 
 ## Endpoint que permita actualizar el nombre de una sucursal.
 PUT		http://localhost:8080/v1/sucursal/updateSucursal/{nombreSucursal}
+
 {
 "nombre": "Sucursal 3300"
 }
 
 ## Endpoint que permita actualizar el nombre de un producto.
 PUT		http://localhost:8080/v1/producto/updateNombre/{nombreProducto}
+
 {
 "nombre": "Producto 20000"
 }
